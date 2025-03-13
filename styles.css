@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Разноцветная обводка для каждого блока */
+section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 5px solid; /* Обводка */
+}
+
+/* Цвета обводки для разных страниц */
+body.index page { /* Для главной страницы */
+    background-color: #f8f9fa; /* Светло-серый фон */
+}
+
+body.business-card page { /* Для страницы визитки */
+    background-color: #fff3cd; /* Светло-желтый фон */
+}
+
+body.movies page { /* Для страницы фильмов */
+    background-color: #d1ecf1; /* Светло-голубой фон */
+}
+
+body.recipe page { /* Для страницы рецептов */
+    background-color: #d4edda; /* Светло-зеленый фон */
+}
+
+/* Генерация случайных цветов для обводки */
+section:nth-of-type(odd) {
+    border-color: #007bff; /* Синий для нечётных блоков */
+}
+
+section:nth-of-type(even) {
+    border-color: #28a745; /* Зелёный для чётных блоков */
+}
+
+h1, h2 {
+    color: #343a40;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+blockquote {
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+    margin: 10px 0;
+    color: #6c757d;
+}
+
+ul {
+    list-style-type: square;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Личный Дневник</title>
+</head>
+<body>
+    <header>
+        <h1>Мой Личный Дневник</h1>
+        <nav>
+            <a href="index.html">Личный дневник</a>
+            <a href="business-card.html">Сайт-Визитка</a>
+            <a href="movies.html">Список Фильмов/Книг/Игр</a>
+            <a href="recipe.html">Рецепт любимого блюда</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="goals">
+            <h2>Ежедневные цели</h2>
+            <form>
+                <input type="checkbox"> Подъем 7.00
+                <input type="checkbox"> Приготовить завтрак/полдник/обед/ужин
+                <input type="checkbox"> Отработать следующий блок CSS
+                <input type="checkbox"> Подвести итоги
+                <input type="checkbox"> Сон: 23.00
+
+            </form>
+        </section>
+
+        <section id="emotions">
+            <h2>Мои эмоции</h2>
+            &#128572; 80% &#128065;&#65039;&#8205;&#128488;&#65039; 20%
+        </section>
+
+        <section id="audio">
+            <h2>Аудиозапись дня</h2>
+            <audio controls>
+                <source src="https://vsezvuki.com/1-zvuki-shumy-i-effekty/category_745_10/745-reka/play/754-atmosfera-nebolshoy-reki-plesk-vody/" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section id="places">
+            <h2>Любимые места</h2>
+            <ul>
+                <li>Парк(СПБ)</li>
+                <li>Шаверно(СПБ)</li>
+                <li>Магнит(ВЕЗДЕ)</li>
+                <li>ДОМ(СПБ)</li>
+                <li>ДОМ(Псков)</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Спасибо за посещение! &copy; <span id="year"></span></p>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

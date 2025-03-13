@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Сайт-визитка</title>
+</head>
+<body>
+    <header>
+        <h1>Моя Визитка</h1>
+        <nav>
+            <a href="index.html">Дневник</a>
+            <a href="business-card.html">Сайт-визитка</a>
+            <a href="movies.html">Список фильмов</a>
+            <a href="recipe.html">Рецепт</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="reviews">
+            <h2>Отзывы клиентов</h2>
+            <blockquote>"Отличная работа!" - Клиент Андрей</blockquote>
+            <blockquote>"Очень доволен результатом!" - Клиент Анна</blockquote>
+        </section>
+
+        <section id="timeline">
+            <h2>Лента времени карьеры</h2>
+            <ul>
+                <li>2023 - Начало карьеры</li>
+                <li>2023 - Первый проект</li>
+                <li>2024 - Поступление в ТКУиК</li>
+                <li>2025 - Первые самостоятельные проекты и их продажа</li>
+            </ul>
+        </section>
+
+        <section id="languages">
+            <h2>Языковой переключатель</h2>
+            <p>EN  |  RU</p>
+        </section>
+
+        <section id="tools">
+            <h2>Мои инструменты</h2>
+            🔧 Adobe Photoshop, 💻 Pheonix Code
+        </section>
+
+        <section id="qr-code">
+            <h2>QR-код для сайта</h2>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://example.com&size=200x200" alt="QR-код для сайта">
+        </section>
+
+        <footer>
+            <p>Спасибо за посещение! &copy; <span id="year"></span></p>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

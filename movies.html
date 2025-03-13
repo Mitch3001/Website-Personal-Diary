@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Список фильмов/книг/игр</title>
+</head>
+<body>
+    <header>
+        <h1>Мой список фильмов/книг/игр</h1>
+        <nav>
+            <a href="index.html">Дневник</a>
+            <a href="business-card.html">Сайт-визитка</a>
+            <a href="movies.html">Список фильмов</a>
+            <a href="recipe.html">Рецепт</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="trailers">
+            <h2>Трейлеры</h2>
+            <iframe width="560" height="315" src="https://yandex.ru/video/preview/8070422924180532836" title="Трейлер" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="overrated">
+            <h2>Самые переоцененные</h2>
+            <ul>
+                <li>Кладбище домашних животных - Просмотрено: Ноябрь 2016</li>
+                <li>Волк с Уол-Стрит - Просмотрено: Июль 2024</li>
+            </ul>
+        </section>
+
+        <section id="favorites">
+            <h2>Персонажи-фавориты</h2>
+            <ul>
+                <li><i>Леонардо Ди Каприо</i></li>
+                <!-- Добавьте других персонажей -->
+            </ul>
+        </section>
+
+        <section id="to-watch">
+            <h2>Что дальше?</h2>
+            <ul>
+                <li>Крестный отец</li>
+                <!-- Добавьте другие произведения -->
+            </ul>
+        </section>
+
+        <footer>
+            <p>Спасибо за посещение! &copy; <span id="year"></span></p>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
